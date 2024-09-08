@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#drum-machine {
+    width: 660px;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.drum-pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: black 3px 3px 5px;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.drum-pad:active {
+    background-color: orange;
+    box-shadow: orange 0px 0px 5px;
+}
+
+#display {
+    background-color: white;
+    text-align: center;
+    background-color: gray;
+    font-weight: 700;
+    width: 200px;
+    height: 15px;
+    padding: 15px;
+}
